@@ -7,6 +7,10 @@
 
         for (int i = 0; i < id.length(); i++) {
             char ch = id.charAt(i);
+
+            if (ch >8){
+                break;
+            }
             boolean esLetra = (ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z');
             boolean esDigito = (ch >= '0' && ch <= '9');
 
